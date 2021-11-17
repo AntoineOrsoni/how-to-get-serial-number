@@ -1,0 +1,16 @@
+testbed:
+  name: XR_Testbed
+  credentials:
+    default:
+      username: admin
+      password: C1sco12345
+
+devices:
+  R1:
+    type: iosxr
+    os: iosxr
+    connections:
+      vty:
+        protocol: ssh
+        ip: sandbox-iosxr-1.cisco.com
+        port: 22
