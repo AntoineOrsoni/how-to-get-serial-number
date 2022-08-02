@@ -12,7 +12,7 @@ iosxr.connect(init_exec_commands=[],
 # Collecting the structured output
 show_inventory = iosxr.parse('show inventory')
 
-print(show_inventory)
+print(f'My device serial number is: {show_inventory["module_name"]["Rack 0"]["sn"]}')
 
 # Disconnect from the device
 iosxr.disconnect()
