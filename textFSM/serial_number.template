@@ -1,0 +1,7 @@
+Value NAME (.+)
+Value DESCR (.+)
+Value SN (.+)
+
+Start
+  ^NAME: "${NAME}", DESCR: "${DESCR}"
+  ^PID.* SN: ${SN} -> Record
